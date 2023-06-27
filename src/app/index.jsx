@@ -1,9 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
+import IndexPage from '../pages/IndexPage'
+import Navigation from '../widgets/navigation'
+import Header from '../widgets/Header';
 
-const IndexPage = () => {
+const App = () => {
+  const [isActiveNav, setIsActiveNav] = useState(false);
   return (
-    <div>IndexPage</div>
+    <div>
+      <Header toggleNav={() => setIsActiveNav(!isActiveNav)} isActiveNav={isActiveNav}/>
+      <IndexPage />
+      <Navigation isActive={isActiveNav} />
+    </div>
   )
 }
 
-export default IndexPage
+export default App
