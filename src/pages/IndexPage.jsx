@@ -4,7 +4,9 @@ import React from 'react'
 
 const IndexPage = () => {
   return (
-    <div>IndexPage</div>
+    <div className='flex justify-center items-center w-full h-5/6'>
+      IndexPage
+    </div>
   )
 }
 

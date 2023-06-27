@@ -6,8 +6,8 @@ import Header from '../widgets/Header';
 const App = () => {
   const [isActiveNav, setIsActiveNav] = useState(false);
   return (
-    <div>
-      <Header toggleNav={() => setIsActiveNav(!isActiveNav)} isActiveNav={isActiveNav}/>
+    <div className='h-screen'>
+      <Header toggleNav={() => setIsActiveNav(!isActiveNav)} isActiveNav={isActiveNav} />
       <IndexPage />
       <Navigation isActive={isActiveNav} />
     </div>
