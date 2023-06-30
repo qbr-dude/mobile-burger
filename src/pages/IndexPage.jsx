@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
+import {useMobileBreakpoint} from './../shared/utils/useBreakpoint';
 
 const IndexPage = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  window.matchMedia('(max-width: 768px)').addEventListener('change', (e) => setIsMobile(e.matches))
+  const isMobile = useMobileBreakpoint();
   return (
     <div className='flex justify-center items-center w-full h-5/6'>
       <span className='text-4xl font-medium'>
