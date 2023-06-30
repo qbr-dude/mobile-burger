@@ -5,7 +5,7 @@ const NavChunk = ({children, onClick}) => {
   const handleClick = () => onClick(children);
   return (
     <div
-      className='flex items-center justify-between w-full mb-5'
+      className='flex items-center justify-between flex-1 mb-5'
       onClick={handleClick}
     >
       {children}

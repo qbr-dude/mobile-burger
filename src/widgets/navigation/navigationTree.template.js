@@ -14,19 +14,27 @@ export const navTree = {
                 {
                     name: 'Облачные вычисления', tree: [{
                         name: 'Облачные вычисления - 1',
-                        description: 'Облачные вычисления - nested',
+                        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum eveniet officia suscipit atque fuga repellendus aperiam, ipsum laborum. Tenetur provident voluptatibus explicabo sapiente excepturi voluptatem nostrum officiis suscipit dicta! Expedita ipsa quaerat laborum vel earum ea ducimus deleniti cum magnam sapiente, reprehenderit, animi tempora aperiam doloribus qui quos quia?',
                         link: '#',
                     }, {
                         name: 'Облачные вычисления - 2',
-                        description: 'Облачные вычисления - nested',
+                        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum eveniet officia suscipit atque fuga repellendus aperiam, ipsum laborum. Tenetur provident voluptatibus explicabo sapiente excepturi voluptatem nostrum officiis suscipit dicta! Expedita ipsa quaerat laborum vel earum ea ducimus deleniti cum magnam sapiente, reprehenderit, animi tempora aperiam doloribus qui quos quia?',
                         link: '#',
                     }, {
                         name: 'Облачные вычисления - 3',
-                        description: 'Облачные вычисления - nested',
+                        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum eveniet officia suscipit atque fuga repellendus aperiam, ipsum laborum. Tenetur provident voluptatibus explicabo sapiente excepturi voluptatem nostrum officiis suscipit dicta! Expedita ipsa quaerat laborum vel earum ea ducimus deleniti cum magnam sapiente, reprehenderit, animi tempora aperiam doloribus qui quos quia?',
                         link: '#',
                     }, {
                         name: 'Облачные вычисления - 4',
-                        description: 'Облачные вычисления - nested',
+                        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum eveniet officia suscipit atque fuga repellendus aperiam, ipsum laborum. Tenetur provident voluptatibus explicabo sapiente excepturi voluptatem nostrum officiis suscipit dicta! Expedita ipsa quaerat laborum vel earum ea ducimus deleniti cum magnam sapiente, reprehenderit, animi tempora aperiam doloribus qui quos quia?',
+                        link: '#',
+                    }, {
+                        name: 'Облачные вычисления - 5',
+                        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum eveniet officia suscipit atque fuga repellendus aperiam, ipsum laborum. Tenetur provident voluptatibus explicabo sapiente excepturi voluptatem nostrum officiis suscipit dicta! Expedita ipsa quaerat laborum vel earum ea ducimus deleniti cum magnam sapiente, reprehenderit, animi tempora aperiam doloribus qui quos quia?',
+                        link: '#',
+                    }, {
+                        name: 'Облачные вычисления - 6',
+                        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum eveniet officia suscipit atque fuga repellendus aperiam, ipsum laborum. Tenetur provident voluptatibus explicabo sapiente excepturi voluptatem nostrum officiis suscipit dicta! Expedita ipsa quaerat laborum vel earum ea ducimus deleniti cum magnam sapiente, reprehenderit, animi tempora aperiam doloribus qui quos quia?',
                         link: '#',
                     }]
                 },

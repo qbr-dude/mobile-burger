@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import IndexPage from '../pages/IndexPage'
 import Navigation from '../widgets/navigation'
-import Header from '../widgets/Header';
+import Header from '../widgets/header';
 
 const App = () => {
   const [isActiveNav, setIsActiveNav] = useState(false);
