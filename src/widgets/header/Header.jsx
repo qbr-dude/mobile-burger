@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../../shared/uikit/Button'
 import classNames from 'classnames'
 import LanguagePicker from '../../shared/language-picker'
 

@@ -18,6 +18,7 @@ const languages = [
 
 const LanguagePicker = () => {
     const [language, setLanguage] = useState(languages[3]);
+    console.log(language);
     return (
         <div>
             <Select
