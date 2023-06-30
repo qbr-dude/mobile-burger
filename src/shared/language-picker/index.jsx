@@ -21,13 +21,11 @@ const languages = [
 const LanguagePicker = () => {
     const [language, setLanguage] = useState(languages[3]);
     return (
-        <div>
-            <Select
-                value={language}
-                options={languages}
-                onChange={setLanguage}
-            />
-        </div>
+        <Select
+            value={language}
+            options={languages}
+            onChange={setLanguage}
+        />
     )
 }
 

@@ -18,15 +18,15 @@ const Navigation = ({isActive}) => {
 
     return (
         <div className={classNames(
-            'fixed top-11 h-screen w-full p-8 pt-12 bg-white transition-all',
+            'fixed top-11 h-9/10 w-full pt-12 bg-white transition-all flex flex-col',
             {'-right-full': !isActive, 'right-0': isActive}
         )}>
             {stack.length > 1 &&
-                <div className='mb-5 border-b flex items-center pb-2' onClick={() => goBackward()}>
-                    <LeftArrow className='inline-block mr-2' width={20} height={20} />
+                <div className='mb-5 border-b flex items-center p-2' onClick={() => goBackward()}>
+                    <LeftArrow className='inline-block mr-1' width={20} height={20} />
                     <span className='text-2xl font-medium'>{stack.at(-1).name}</span>
                 </div>}
-            <div className='overflow-y-auto h-5/6 w-screen -ml-8 px-8'>
+            <div className='overflow-y-auto flex-1 w-screen px-8'>
                 {stack.at(-1).tree.map(tree =>
                     tree.tree ?
                         <NavChunk
@@ -47,7 +47,7 @@ const Navigation = ({isActive}) => {
                         </div>
                 )}
             </div>
-            {stack.length === 1 && <div className='flex flex-col items-start'>
+            {stack.length === 1 && <div className='flex flex-col items-start px-8'>
                 <button className='mb-5'><span className='text-2xl font-medium'>Контакты</span></button>
                 <button className='mb-5'><span className='text-2xl font-medium'>Поиск</span></button>
             </div>}
