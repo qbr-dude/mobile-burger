@@ -10,12 +10,12 @@ import {ReactComponent as RUIcon} from './svg/Icon_RU.svg';
 import {ReactComponent as TRIcon} from './svg/Icon_TR.svg';
 
 const languages = [
-    {name: 'United States', value: 'EN', icon: <ENIcon width={20} height={20} />},
-    {name: 'Netherlands', value: 'NL', icon: <NLIcon width={20} height={20} />},
-    {name: 'Беларусь', value: 'BE', icon: <BYIcon width={20} height={20} />},
-    {name: 'Россия', value: 'RU', icon: <RUIcon width={20} height={20} />},
-    {name: 'Казахстан', value: 'KZ', icon: <KZIcon width={20} height={20} />},
-    {name: 'Türkiye', value: 'TR', icon: <TRIcon width={20} height={20} />},
+    {name: 'United States', value: 'En', icon: <ENIcon width={20} height={20} />},
+    {name: 'Netherlands', value: 'Nl', icon: <NLIcon width={20} height={20} />},
+    {name: 'Беларусь', value: 'Be', icon: <BYIcon width={20} height={20} />},
+    {name: 'Россия', value: 'Ru', icon: <RUIcon width={20} height={20} />},
+    {name: 'Казахстан', value: 'Kz', icon: <KZIcon width={20} height={20} />},
+    {name: 'Türkiye', value: 'Tr', icon: <TRIcon width={20} height={20} />},
 ]
 
 const LanguagePicker = () => {

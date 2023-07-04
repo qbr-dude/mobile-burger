@@ -4,7 +4,7 @@ import React, {useRef, useState} from 'react'
 import {useClickOutside} from '../../utils/useClickOutside';
 
 import {ReactComponent as CheckIcon} from './check.svg';
-import {ReactComponent as UpIcon} from './up-arrow.svg';
+import {ReactComponent as DownArrowActive} from './down-arrow-active.svg';
 import {ReactComponent as DownIcon} from './down-arrow.svg';
 
 const Select = ({
@@ -34,11 +34,11 @@ const Select = ({
                     {value.icon && <div className='pr-2'>
                         {value.icon}
                     </div>}
-                    <span className='font-medium'>
+                    <span className='font-medium text-xl'>
                         {value.value}
                     </span>
                     <div className='pl-2'>
-                        <DownIcon width={16} height={16} />
+                        {isActive ? <DownArrowActive width={16} height={16} /> : <DownIcon width={16} height={16} />}
                     </div>
                 </div>
             </div>
