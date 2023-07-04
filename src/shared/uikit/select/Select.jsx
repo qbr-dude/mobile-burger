@@ -25,8 +25,8 @@ const Select = ({
         <div className='relative' ref={ref}>
             <div
                 className={classNames(
-                    'py-2 px-3 rounded-sm border-blue-100 border',
-                    {'bg-blue-100 border-blue-200': isActive}
+                    'py-2 px-3 rounded-sm',
+                    {'bg-blue-100 outline outline-1 outline-blue-200': isActive}
                 )}
                 onClick={() => setIsActive(!isActive)}
             >
@@ -38,7 +38,7 @@ const Select = ({
                         {value.value}
                     </span>
                     <div className='pl-2'>
-                        {isActive ? <UpIcon width={16} height={16} /> : <DownIcon width={16} height={16} />}
+                        <DownIcon width={16} height={16} />
                     </div>
                 </div>
             </div>

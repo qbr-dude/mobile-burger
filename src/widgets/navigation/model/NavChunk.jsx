@@ -9,7 +9,7 @@ const NavChunk = ({children, onClick}) => {
       onClick={handleClick}
     >
       {children}
-      <Arrow width={20} height={20} />
+      <Arrow width={16} height={16} />
     </div>
   )
 }

@@ -22,11 +22,14 @@ const Navigation = ({isActive}) => {
             {'-right-full': !isActive, 'right-0': isActive}
         )}>
             {stack.length > 1 &&
-                <div className='mb-5 border-b flex items-center p-2' onClick={() => goBackward()}>
-                    <LeftArrow className='inline-block mr-1' width={20} height={20} />
+                <div className='mb-5 flex items-center p-3' onClick={() => goBackward()}>
+                    <LeftArrow className='inline-block mr-1' width={16} height={16} />
                     <span className='text-2xl font-medium'>{stack.at(-1).name}</span>
                 </div>}
-            <div className='overflow-y-auto flex-1 w-screen px-8'>
+            <div className={classNames(
+                'overflow-y-auto flex-1 w-screen px-8 pt-5',
+                {'border-t': !stack.at(-1).tree[0].tree}
+            )}>
                 {stack.at(-1).tree.map(tree =>
                     tree.tree ?
                         <NavChunk
@@ -39,11 +42,11 @@ const Navigation = ({isActive}) => {
                                 {tree.name}
                             </span>
                         </NavChunk> :
-                        <div className='mb-2' key={tree.name}>
+                        <div className='mb-8' key={tree.name}>
                             <Link href={tree.link}>
                                 <span className='font-medium'>{tree.name}</span>
                             </Link>
-                            <p className='text-xs mt-2 text-gray-600'>{tree.description}</p>
+                            <p className='text-xs mt-2 text-gray-600 leading-5'>{tree.description}</p>
                         </div>
                 )}
             </div>
